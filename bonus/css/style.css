@@ -4,6 +4,9 @@
   padding: 0;
 }
 
+body {
+  font-family: sans-serif;
+}
 
 .container {
   width: 600px;
@@ -11,7 +14,6 @@
 }
 
 h1 {
-  font-family: sans-serif;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -24,13 +26,16 @@ p {
   display: flex;
   background-color: lightgrey;
   justify-content: space-between;
-  /* align-items: center; */
   flex-direction: row;
-  /* flex-wrap: wrap; */
 }
 
 div.input {
-  width: 170px;
+  width: 160px;
   height: 300px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+
+input {
+  width: 160px;
+  font-family: monospace;
 }
