@@ -6,7 +6,13 @@ v-bind
 v-on
 methods*/
 
+/*N.B.: Una volta importato il Vew, attraverso lo script inserito nell'Head, occorre INSTANZIARE Vew con le istruzioni che seguono appena sotto:
 
+var app = new Vew({
+el: '#root',
+});
+
+*/
 
 var app = new Vue({
  el: '#root',
