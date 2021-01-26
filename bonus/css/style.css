@@ -30,9 +30,13 @@ p {
   margin: 20px 0;
 }
 
+span {
+  color: white;
+}
+
 .input-box {
   display: flex;
-  background-color: lightgrey;
+  background-color: yellow;
   justify-content: space-between;
   flex-direction: row;
 }
