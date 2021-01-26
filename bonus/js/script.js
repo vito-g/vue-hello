@@ -24,7 +24,8 @@ var app = new Vue({
    message : 'Vew Value',
    name : '',
    surname : '',
-   saluti : 'Ciao'
+   saluti : 'Ciao',
+   sfondo : 'input-box-new'
  }
 });
 

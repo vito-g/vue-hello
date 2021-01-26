@@ -29,6 +29,15 @@ p {
   flex-direction: row;
 }
 
+.input-box-new {
+  display: flex;
+  background-color:green;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+
+
 div.input {
   width:300px;
   height: 300px;
