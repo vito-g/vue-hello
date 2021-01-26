@@ -12,4 +12,25 @@
 
 h1 {
   font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  margin-top: 20px;
+}
+
+.input-box {
+  display: flex;
+  background-color: lightgrey;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+
+div.input {
+  width: 170px;
+  height: 300px;
+  border: 1px solid black;
 }

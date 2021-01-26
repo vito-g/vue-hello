@@ -11,20 +11,44 @@
     <title>VUE_HELLO - BONUS</title>
   </head>
   <body>
-  <!-- Contenitore di tutto -->
+<!-- Contenitore di tutto -->
   <div class="container">
 
-    <!-- Container di Visualizzazione di VEW -->
+  <!-- Container di Visualizzazione di VEW -->
     <div id="root">
 
       <h1>{{title}}</h1>
-      <img :src="picture" alt="">
+
+      <div class="">
+        <img :src="picture" alt="">
+      </div>
+
+    <!-- INPUT -->
+    <div class="input-box">
+
+      <!-- Sintassi Input tradizionale -->
+      <div class="input">
+        <input type="text" name="" value="Traditional Value">
+      </div>
+      <!-- END Sintassi Input tradizionale -->
+
+      <!-- "Monitorare" il VALUE di un INPUT -->
+        <!-- attraverso un attributo di Vew. Il v-model: -->
+      <div class="input">
+        <input v-model="message">
+        <p>Questa è una Copia Istantanea del Value di Input: {{message}}</p>
+      </div>
+      <!-- END "Mnitorare" il value di un INPUT-->
 
     </div>
-    <!-- END Container di Visualizzazione di VEW -->
+    <!-- END INPUT -->
+
+
+    </div>
+  <!-- END Container di Visualizzazione di VEW -->
 
   </div>
-  <!-- END Contenitore di tutto -->
+<!-- END Contenitore di tutto -->
 
   <script src="js/script.js" charset="utf-8"></script>
   </body>
