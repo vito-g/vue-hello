@@ -24,38 +24,41 @@
       </div>
 
     <!-- INPUT -->
-    <div class="input-box" :class="sfondo" :style="'background:' + coloreDiSfondo + ';'">
+      <div class="input-box" :class="sfondo" :style="'background:' + coloreDiSfondo + ';'">
 
-      <!-- Sintassi Input tradizionale -->
-      <div class="input">
-        <input type="text" name="" value="Traditional Value">
-      </div>
-      <!-- END Sintassi Input tradizionale -->
+        <!-- Sintassi Input tradizionale -->
+        <div class="input">
+          <input type="text" name="" value="Traditional Value">
+        </div>
+        <!-- END Sintassi Input tradizionale -->
 
-      <!-- "Monitorare" il VALUE di un INPUT -->
-        <!-- attraverso un attributo di Vew. Il v-model: -->
-      <div class="input">
-        <input v-model="message">
-        <p>Questa è una Copia Istantanea del Value di Input:<br><br> <span>{{message}}</span> </p>
-        <input v-model="name">
-        <input v-model="surname">
-        <p>{{saluti}} {{name}} {{surname}}!</p>
-      </div>
-      <div class="input">
-        <input v-model="coloreDiSfondo">
-      </div>
-      <div class="input">
-        <input id="submit "@keyup.enter="submitFx" value="">
-        <label for="submit">leave your message and press enter</label>
-      </div>
+        <!-- "Monitorare" il VALUE di un INPUT -->
+          <!-- attraverso un attributo di Vew. Il v-model: -->
+        <div class="input">
+          <input v-model="message">
+          <p>qui sotto, una copia istantanea del value di input:<br><br> <span>{{message}}</span> </p>
+          <input v-model="name" placeholder="name">
+          <input v-model="surname" placeholder="surname">
+          <p>{{saluti}} {{name}} {{surname}}!</p>
+        </div>
+        <div class="input">
+          <input v-model="coloreDiSfondo">
+        </div>
+        <!-- END "Monitorare" il value di un INPUT-->
+        <div class="input">
+          <!-- @KEYUP -->
+          <input id="submit "@keyup.enter="submitFx" value="" placeholder="your text here">
+          <label for="submit">leave your message and press enter</label>
+        </div>
 
       </div>
-      <!-- END "Monitorare" il value di un INPUT-->
+      <!-- END INPUT -->
 
-      <button :style="'background:' + color + '; border:' + border + '; padding:4px;color:white'" type="button" name="button">CLICK</button>
+      <button  @click="changeColorFx" :style="'background:' + color + '; border:' + border + '; padding:4px;color:white;'" type="button" name="button">CLICK</button>
+
+      <!-- @CLICK -->
       <button  @click="salutaFx" :style="'border:' + border + '; padding:4px; background:#381d7a; color:white;'">CLICK with Vew</button>
     </div>
-    <!-- END INPUT -->
 
 
   <!-- END Container di Visualizzazione di VEW -->

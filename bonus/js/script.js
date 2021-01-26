@@ -29,7 +29,7 @@ var app = new Vue({
    color : '#ad6614',
    border : 'none',
    colorHeadline: '#381d7a',
-   coloreDiSfondo: 'grey'
+   coloreDiSfondo: 'grey',
  },
  methods: {
    salutaFx: function() {
@@ -37,7 +37,11 @@ var app = new Vue({
    },
    submitFx: function() {
      alert('Messaggio inoltrato correttamente!')
+   },
+   changeColorFx: function() {
+     this.colorHeadline = '#82aec9'
    }
+
 }
 
 });
