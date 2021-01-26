@@ -25,7 +25,9 @@ var app = new Vue({
    name : '',
    surname : '',
    saluti : 'Ciao',
-   sfondo : 'input-box-new'
+   sfondo : 'input-box-new',
+   color : 'gold',
+   border : 'none'
  }
 });
 
