@@ -11,7 +11,10 @@ methods*/
 var app = new Vue({
  el: '#root',
  data: {
-   title : 'IT\'S THE FIRST VEU EXPERIENCE'
+   // Restituisce attraverso la parola chiave "title"(opportunamente richiamata in HTML come contenuto del tag) un messaggio all’interno di un elemento tag, inserito nel div di id "root":
+   title : 'IT\'S THE FIRST VEU EXPERIENCE',
+   // Restituisce, attraverso la parola chiave "picture", il path di una immagine come valore dell'attributo src di un tag img, inserito nel "root":
+   picture : 'img/Beep-Beep.jpg',
  }
 });
 
