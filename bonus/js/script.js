@@ -34,6 +34,9 @@ var app = new Vue({
  methods: {
    salutaFx: function() {
      alert('Ciao!')
+   },
+   submitFx: function() {
+     alert('Messaggio inoltrato correttamente!')
    }
 }
 

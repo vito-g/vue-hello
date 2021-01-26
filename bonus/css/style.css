@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  width: 600px;
+  width: 650px;
   margin: auto;
 }
 
@@ -51,7 +51,7 @@ span {
 
 
 div.input {
-  width:180px;
+  width:150px;
   height: 300px;
   padding: 10px;
   /* border: 1px solid black; */
@@ -60,6 +60,11 @@ div.input {
 input {
   width: 100%;
   font-family: monospace;
+}
+
+label {
+  font-size: 8px;
+  color: white;
 }
 
 .button-new-color {
