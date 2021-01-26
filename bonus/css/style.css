@@ -18,6 +18,14 @@ h1 {
   margin-bottom: 30px;
 }
 
+.image {
+  display: flex;
+}
+
+img {
+  margin: auto;
+}
+
 p {
   margin: 20px 0;
 }
@@ -39,7 +47,7 @@ p {
 
 
 div.input {
-  width:280px;
+  width:180px;
   height: 300px;
   padding: 10px;
   /* border: 1px solid black; */
@@ -52,4 +60,9 @@ input {
 
 .button-new-color {
   background-color: grey;
+}
+
+.scatola {
+  width: 100px;
+  height: 100px;
 }

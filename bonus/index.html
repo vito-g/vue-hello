@@ -17,14 +17,14 @@
   <!-- Container di Visualizzazione di VEW -->
     <div id="root">
 
-      <h1>{{title}}</h1>
+      <h1 :style="'color:' + colorHeadline + ';'">{{title}}</h1>
 
-      <div class="">
+      <div class="image">
         <img :src="picture" alt="">
       </div>
 
     <!-- INPUT -->
-    <div class="input-box" :class="sfondo">
+    <div class="input-box" :class="sfondo" :style="'background:' + coloreDiSfondo + ';'">
 
       <!-- Sintassi Input tradizionale -->
       <div class="input">
@@ -41,17 +41,19 @@
         <input v-model="surname">
         <p>{{saluti}} {{name}} {{surname}}!</p>
       </div>
-      <!-- END "Mnitorare" il value di un INPUT-->
+      <div class="input">
+        <input v-model="coloreDiSfondo">
+      </div>
 
+      </div>
+      <!-- END "Monitorare" il value di un INPUT-->
 
-
+      <button :style="'background:' + color + '; border:' + border + '; padding:4px;color:white'" type="button" name="button">CLICK</button>
+      <button  @click="salutaFx" :style="'border:' + border + '; padding:4px; background:#381d7a; color:white;'">CLICK with Vew</button>
     </div>
     <!-- END INPUT -->
-    <button :style="'background:' + color + '; border:' + border + '; padding:4px;color:white'" type="button" name="button">CLICK</button>
-    <button  @click="salutaFx" :style="'border:' + border + '; padding:4px; background:#381d7a; color:white;'">CLICK with Vew</button>
 
 
-    </div>
   <!-- END Container di Visualizzazione di VEW -->
 
   </div>
