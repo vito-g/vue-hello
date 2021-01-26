@@ -24,7 +24,7 @@
       </div>
 
     <!-- INPUT -->
-      <div class="input-box" :class="sfondo" :style="'background:' + coloreDiSfondo + ';'">
+      <div class="input-box" :class="sfondo" :style="'background:' + coloreDiSfondo + '; border-radius:' + borderRadius + ';'">
 
         <!-- Sintassi Input tradizionale -->
         <div class="input">
@@ -53,14 +53,14 @@
 
       </div>
       <!-- END INPUT -->
+      <div class="action">
+        <!-- @CLICK -->
+        <button  @click="changeColorFx" :style="'background:' + color + '; border:' + border + '; padding:4px; color:white; border-radius:' + borderRadius + ';'" type="button" name="button">H1 SWITCH COLOR</button>
+        <button  @click="salutaFx" :style="'border:' + border + '; padding:4px; background:#381d7a; color:white; border-radius:' + borderRadius + ';'">ALERT</button>
+        <button  @click="changeBorderFx" :style="'border:' + border + '; padding:4px; background:#82aec9; color:white; border-radius:' + borderRadius + ';'">BORDER RADIUS</button>
+      </div>
 
-      <button  @click="changeColorFx" :style="'background:' + color + '; border:' + border + '; padding:4px;color:white;'" type="button" name="button">CLICK</button>
-
-      <!-- @CLICK -->
-      <button  @click="salutaFx" :style="'border:' + border + '; padding:4px; background:#381d7a; color:white;'">CLICK with Vew</button>
     </div>
-
-
   <!-- END Container di Visualizzazione di VEW -->
 
   </div>

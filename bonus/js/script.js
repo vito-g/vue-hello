@@ -28,8 +28,9 @@ var app = new Vue({
    sfondo : 'input-box-new', //Non puoi mettere a commento una proprietà- VEW Impazzisce!
    color : '#ad6614',
    border : 'none',
-   colorHeadline: '#381d7a',
-   coloreDiSfondo: 'grey',
+   colorHeadline : '#381d7a',
+   coloreDiSfondo : 'grey',
+   borderRadius : '0px'
  },
  methods: {
    salutaFx: function() {
@@ -40,6 +41,9 @@ var app = new Vue({
    },
    changeColorFx: function() {
      this.colorHeadline = '#82aec9'
+   },
+   changeBorderFx: function() {
+     this.borderRadius = '8px'
    }
 
 }

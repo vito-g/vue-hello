@@ -46,6 +46,7 @@ span {
   background-color: #82aec9;
   justify-content: space-between;
   flex-direction: row;
+  margin-bottom: 10px;
 }
 
 
@@ -72,6 +73,12 @@ label {
   color: white;
 }
 
+button {
+  height: 30px;
+  width: 135px;
+  padding:20px;
+}
+
 .button-new-color {
   background-color: grey;
 }
@@ -79,4 +86,11 @@ label {
 .scatola {
   width: 100px;
   height: 100px;
+}
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 10px;
 }
