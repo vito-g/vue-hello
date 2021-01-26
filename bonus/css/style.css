@@ -31,7 +31,7 @@ p {
 
 .input-box-new {
   display: flex;
-  background-color:green;
+  background-color: #82aec9;
   justify-content: space-between;
   flex-direction: row;
 }
@@ -48,4 +48,8 @@ div.input {
 input {
   width: 100%;
   font-family: monospace;
+}
+
+.button-new-color {
+  background-color: grey;
 }

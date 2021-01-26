@@ -25,10 +25,16 @@ var app = new Vue({
    name : '',
    surname : '',
    saluti : 'Ciao',
-   sfondo : 'input-box-new',
-   color : 'gold',
+   sfondo : 'input-box-new', //Non puoi mettere a commento una proprietà- VEW Impazzisce!
+   color : '#ad6614',
    border : 'none'
- }
+ },
+ methods: {
+   salutaFx: function() {
+     alert('Ciao!')
+   }
+}
+
 });
 
 
