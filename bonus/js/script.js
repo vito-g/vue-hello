@@ -21,7 +21,10 @@ var app = new Vue({
    title : 'IT\'S THE FIRST VEU EXPERIENCE',
    // Restituisce, attraverso la parola chiave "picture", il path di una immagine come valore dell'attributo src di un tag img, inserito nel "root":
    picture : 'img/Beep-Beep.jpg',
-   message : 'Vew Value'
+   message : 'Vew Value',
+   name : '',
+   surname : '',
+   saluti : 'Ciao'
  }
 });
 
